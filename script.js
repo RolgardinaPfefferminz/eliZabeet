@@ -50,16 +50,16 @@ else {
     const pin = document.createElement("div");
     const visited = routeOrder.includes(st.id);
     pin.className = "station-pin" + (st.isStart ? " start" : "") + (visited ? " visited" : "") + (!visited && !st.isStart ? " pulsing" : "");
+    
     pin.style.left = st.pos.x + "%";
 
-     if(st.isStart){
+if(st.isStart){
   pin.innerHTML = "📍";
   pin.classList.add("preview-start");
 }
- pin.style.left = st.pos.x + "%";    
+
 pin.style.top = st.pos.y + "%";
-  
-    pin.style.top = st.pos.y + "%";
+     
    
     pin.onclick = () => openPanel(st.id);
     stage.appendChild(pin);
