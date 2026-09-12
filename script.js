@@ -65,7 +65,7 @@ pin.style.top = st.pos.y + "%";
     stage.appendChild(pin);
   });
 
-  drawRouteLine(canvas);
+  drawRouteLine(stage);
   updateMapStatus();
 }
 
