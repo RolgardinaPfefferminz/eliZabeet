@@ -194,13 +194,21 @@ renderFieldNote();
 window.addEventListener("resize", () => drawRouteLine(document.getElementById("map-canvas")));
 const mapOverlay = document.getElementById("map-overlay");
 const mapLarge = document.getElementById("map-large");
-
 document.getElementById("map-expand-btn").addEventListener("click", () => {
   mapLarge.style.backgroundImage = `url("${CONFIG.mapBackground}")`;
-  mapOverlay.classList.add("is-open");
-});
 
-document.getElementById("map-close-btn").addEventListener("click", () => {
-  mapOverlay.classList.remove("is-open");
+  mapLarge.querySelectorAll(".large-station-hit").forEach(hit => hit.remove());
+
+  STATIONS.forEach((st) => {
+    const hit = document.createElement("button");
+    hit.className = "large-station-hit";
+    hit.type = "button";
+    hit.style.left = st.pos.x + "%";
+    hit.style.top = st.pos.y + "%";
+    hit.addEventListener("click", () => openPanel(st.id));
+    mapLarge.appendChild(hit);
+  });
+
+  mapOverlay.classList.add("is-open");
 });
 
