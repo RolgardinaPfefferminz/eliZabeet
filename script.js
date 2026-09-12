@@ -51,9 +51,10 @@ function renderMap(){
      if(st.isStart){
   pin.innerHTML = "📍";
   pin.classList.add("preview-start");
-  pin.style.left = "78%";
-  pin.style.top = "35%";
 }
+
+pin.style.left = st.pos.x + "%";
+pin.style.top = st.pos.y + "%";
   
     pin.style.top = st.pos.y + "%";
    
