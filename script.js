@@ -56,7 +56,7 @@ else {
   pin.innerHTML = "📍";
   pin.classList.add("preview-start");
 }
-pin.style.left = (st.pos.x - 4) + "%";
+ pin.style.left = st.pos.x + "%";    
 pin.style.top = st.pos.y + "%";
   
     pin.style.top = st.pos.y + "%";
