@@ -24,46 +24,54 @@
     <span class="cap">Stations visited</span>
   </div>
 </section>
+<section class="section map-section">
 
-<section class="section">
-  <div class="num-label">01 · The Map</div>
-  <div class="section-head-row">
-    <h2>Start anywhere.</h2>
-    <button class="reset-btn" id="reset-btn">↺ Reset route</button>
+  <div class="map-canvas" id="map-canvas">
+
+    <svg class="map-svg" id="map-svg">
+      <path class="route-line" id="route-line" d=""></path>
+    </svg>
+
+    <!-- Pins werden per JavaScript eingefügt -->
+
   </div>
 
-  <div class="map-route-grid">
-    <div>
-      <div class="map-canvas" id="map-canvas">
-        <svg class="map-svg" id="map-svg"><path class="route-line" id="route-line" d=""/></svg>
-        <!-- Pins werden per JavaScript eingefügt -->
-        <button class="map-expand-btn" id="map-expand-btn" type="button">View map</button>
-      </div>
-      <div class="map-legend">
-        <div class="items">
-          <span><span class="swatch-line"></span> Explored route</span>
-          <span><span class="swatch-dot"></span> Station</span>
-        </div>
-        <div id="map-status">Tap a pin to begin</div>
-      </div>
+  <div class="map-legend">
+    <div class="items">
+      <span><span class="swatch-line"></span> Explored route</span>
+      <span><span class="swatch-dot"></span> Station</span>
     </div>
-
-    <div class="route-panel">
-      <span class="tag" id="route-tag">Not yet started</span>
-      <div class="num-label">02 · Your Route</div>
-      <h2>A thread<br><em>through the garden.</em></h2>
-      <p>Each visited station leaves a mark. There is no correct order; let the line get strange.</p>
-
-      <div id="route-body"><!-- Platzhalter oder Liste per JS --></div>
-
-      <hr class="route-divider">
-      <div class="route-note">
-        <h3>↝ The vine keeps score.</h3>
-        <p>Your route is stored on this device, for next time.</p>
-      </div>
-    </div>
+    <div id="map-status">Tap a pin to begin</div>
   </div>
-</section>
+
+  <div class="route-panel">
+
+    <div class="section-head-row">
+      <div>
+        <div class="num-label">02 · Your Route</div>
+        <h2>A thread<br><em>through the garden.</em></h2>
+      </div>
+
+      <button class="reset-btn" id="reset-btn">↺ Reset route</button>
+    </div>
+
+    <span class="tag" id="route-tag">Not yet started</span>
+
+    <p>
+      Each visited station leaves a mark.
+      There is no correct order; let the line get strange.
+    </p>
+
+    <div id="route-body"></div>
+
+    <hr class="route-divider">
+
+    <div class="route-note">
+      <h3>↝ The vine keeps score.</h3>
+      <p>Your route is stored on this device, for next time.</p>
+    </div>
+
+  </div>
 
 <div class="field-notes">
   <div class="num-label" style="width:100%;">03 · eliZa / Field Notes</div>
