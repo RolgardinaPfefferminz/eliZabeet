@@ -132,10 +132,10 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   border:none;
   box-shadow:none;
 }
-
 .station-pin.pulsing{
-  animation:pinPulse 2.6s ease-in-out infinite;
+  animation:none;
 }
+
 @keyframes pinPulse{
   0%,100%{
     box-shadow:0 0 0 4px rgba(239,234,216,0.6);
