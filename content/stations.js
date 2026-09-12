@@ -134,7 +134,23 @@ const STATIONS = [
     prompt:"Platzhalter-Aufgabe zu den Insektenhotels.",
     eliza:["Kleine Zimmer für kleine Gäste. Auch ich bin nur ein Zimmer aus Text, in dem du kurz verweilst."] },
 
-  { id:"seedbomb", name:"Seed Bomb", icon:"🌸", isFinal:true, pos:{x:63.0, y:72.9},
-    prompt:"Bau dir eine Seed Bomb. Wähl einen Ort in der Stadt, der etwas mehr Grün gebrauchen könnte.",
-    eliza:["Welcome to the community of Guerrilla Gardeners.", "Every flower starts with one seed."] }
+   {
+  id:"seedbomb",
+  name:"Guerrilla Gardening / Seed Bombs",
+  icon:"🌱",
+  isFinal:true,
+  pos:{x:63.0, y:72.9},
+
+  prompt:"Bist du bereit, heimlich zu gärtnern?\nReady to garden secretly?\n\nSuper. Dann schauen wir mal, was du heute entdeckt hast.\nLet’s see what you discovered today.",
+
+  eliza:[
+    "Welcome to the community of Guerrilla Gardeners.",
+    "Every flower starts with one seed."
+  ],
+
+  note:{
+    label:"🌱 Guerrilla Gardening Quiz",
+    content:"Hier kommt dein Quiz – und danach kannst du deine eigene Seed Bomb bauen."
+  }
+}
 ];
