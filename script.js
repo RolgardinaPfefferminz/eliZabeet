@@ -194,6 +194,9 @@ renderFieldNote();
 window.addEventListener("resize", () => drawRouteLine(document.getElementById("map-canvas")));
 const mapOverlay = document.getElementById("map-overlay");
 const mapLarge = document.getElementById("map-large");
+document.getElementById("map-close-btn").addEventListener("click", () => {
+  mapOverlay.classList.remove("is-open");
+});
 document.getElementById("map-expand-btn").addEventListener("click", () => {
   mapLarge.style.backgroundImage = `url("${CONFIG.mapBackground}")`;
 
