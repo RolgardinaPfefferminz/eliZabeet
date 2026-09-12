@@ -200,26 +200,4 @@ saveRoute();
 renderAll();
 renderFieldNote();
 window.addEventListener("resize", () => drawRouteLine(document.getElementById("map-canvas")));
-const mapOverlay = document.getElementById("map-overlay");
-const mapLarge = document.getElementById("map-large");
-document.getElementById("map-close-btn").addEventListener("click", () => {
-  mapOverlay.classList.remove("is-open");
-});
-document.getElementById("map-expand-btn").addEventListener("click", () => {
-  mapLarge.style.backgroundImage = `url("${CONFIG.mapBackground}")`;
-
-  mapLarge.querySelectorAll(".large-station-hit").forEach(hit => hit.remove());
-
-  STATIONS.forEach((st) => {
-    const hit = document.createElement("button");
-    hit.className = "large-station-hit" + (st.isStart ? " large-start" : "");
-    hit.type = "button";
-    hit.style.left = st.pos.x + "%";
-    hit.style.top = st.pos.y + "%";
-    hit.addEventListener("click", () => openPanel(st.id));
-    mapLarge.appendChild(hit);
-  });
-
-  mapOverlay.classList.add("is-open");
-});
 
