@@ -203,4 +203,12 @@ document.getElementById("map-expand-btn").addEventListener("click", () => {
 document.getElementById("map-close-btn").addEventListener("click", () => {
   mapOverlay.classList.remove("is-open");
 });
-
+STATIONS.forEach((st) => {
+  const hit = document.createElement("button");
+  hit.className = "large-station-hit";
+  hit.type = "button";
+  hit.style.left = st.pos.x + "%";
+  hit.style.top = st.pos.y + "%";
+  hit.addEventListener("click", () => openPanel(st.id));
+  mapLarge.appendChild(hit);
+});
