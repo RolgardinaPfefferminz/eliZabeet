@@ -122,11 +122,13 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
 }
 
 .station-pin.start{
-  background:transparent;
-  border:none;
-  box-shadow:none;
+  width:24px;
+  height:24px;
+  background:var(--berry);
+  border:2px solid var(--paper);
+  border-radius:50%;
+  box-shadow:0 0 0 2px var(--berry);
 }
-
 .station-pin.visited{
   background:transparent;
   border:none;
