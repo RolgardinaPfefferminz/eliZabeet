@@ -154,14 +154,12 @@ function openPanel(id){
   elizaBox.style.display = line ? "block" : "none";
 
   const noteBox = document.getElementById("panel-note");
-
-   if(st.note){
-  noteBox.innerHTML = `<strong>${st.note.label}</strong><br>${st.note.content}`;
+  if(st.note){
+  noteBox.innerHTML =
+    `<strong>${st.note.label}</strong><br>${st.note.content}` +
+    (st.note.link ? `<br><a href="${st.note.link}" target="_blank" rel="noopener">Circular Blue →</a>` : "");
   noteBox.style.display = "block";
-} else {
-  noteBox.style.display = "none";
 }
-
 
   } else {
     noteBox.style.display = "none";
@@ -219,5 +217,3 @@ if(start){
       mapCanvas.clientWidth / 2;
   });
 }
-
-
