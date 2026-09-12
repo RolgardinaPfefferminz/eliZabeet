@@ -67,9 +67,13 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
 }
 
 /* ---------- map + route: two columns, stack on mobile ---------- */
-.map-route-grid{ display:grid; grid-template-columns: 1.4fr 1fr; gap:36px; align-items:start; }
-@media (max-width: 860px){
-  .map-route-grid{ grid-template-columns: 1fr; }
+
+.map-route-grid{
+  display:block;
+}
+
+.route-panel{
+  margin-top:36px;
 }
 .map-canvas{
   position:relative;
