@@ -135,15 +135,6 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
 .station-pin.pulsing{
   animation:none;
 }
-
-@keyframes pinPulse{
-  0%,100%{
-    box-shadow:0 0 0 4px rgba(239,234,216,0.6);
-  }
-  50%{
-    box-shadow:0 0 0 7px rgba(74,103,65,0.18);
-  }
-}
 .map-legend{
   display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
   font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-soft);
