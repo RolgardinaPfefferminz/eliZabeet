@@ -8,7 +8,7 @@ const CONFIG = {
   // Liegt die Datei in assets/map/, z.B. so: "assets/map/garten.png"
   // Leer lassen ("") solange es noch keine gibt — dann bleibt der
   // schlichte Hintergrund, wie er jetzt ist.
-  mapBackground: "",
+  mapBackground: "assets/map/garden-map.png",
 
   // Eigene Grafik für die aufblühende Blüte am Ende der Tour
   // (ersetzt das 🌸-Emoji), z.B. "assets/vine/bluete.svg"
