@@ -141,124 +141,12 @@ function openPanel(id){
   document.getElementById("panel-prompt").textContent = st.prompt;
 
   const img = document.getElementById("panel-image");
-  if(st.image){
-    img.src = st.image;
-    img.style.display = "block";
-  } else {
-    img.style.display = "none";
-  }
+  if(st.image){ img.src = st.image; img.style.display = "block"; }
+  else { img.style.display = "none"; }
 
   const audio = document.getElementById("panel-audio");
-  if(st.audio){
-    audio.src = st.audio;
-    audio.style.display = "block";
-  } else {
-    audio.style.display = "none";
-  }
-
-  const elizaBox = document.getElementById("panel-eliza");
-  const line = Array.isArray(st.eliza)
-    ? st.eliza[Math.floor(Math.random() * st.eliza.length)]
-    : st.eliza;
-
-  elizaBox.textContent = line ? "🫜 eliZa: " + line : "";
-  elizaBox.style.display = line ? "block" : "none";
-
-  const noteBox = document.getElementById("panel-note");
-  if(st.note){
-    noteBox.innerHTML =
-      `<strong>${st.note.label}</strong><br>${st.note.content}` +
-      (st.note.link
-        ? `<br><a href="${st.note.link}" target="_blank" rel="noopener">Circular Blue →</a>`
-        : "");
-    noteBox.style.display = "block";
-  } else {
-    noteBox.style.display = "none";
-  }
-
-  const quizBox = document.getElementById("panel-quiz");
-
-  if(st.quiz){
-    quizBox.innerHTML = `
-      <div class="quiz-title">${st.quiz.title}</div>
-      <div id="quiz-content"></div>
-    `;
-
-    const quizContent = document.getElementById("quiz-content");
-
-    st.quiz.questions.forEach((q, index) => {
-      const question = document.createElement("div");
-      question.className = "quiz-question";
-
-      const title = document.createElement("p");
-      title.innerHTML = `<strong>${index + 1}. ${q.question}</strong>`;
-      question.appendChild(title);
-
-      if(q.type === "text"){
-        const input = document.createElement("textarea");
-        input.placeholder = "Your answer...";
-        question.appendChild(input);
-      } else {
-        q.options.forEach((option, optionIndex) => {
-          const label = document.createElement("label");
-          label.className = "quiz-option";
-
-          const input = document.createElement("input");
-
-          if(q.type === "multi"){
-            input.type = "checkbox";
-          } else {
-            input.type = "radio";
-            input.name = "quiz-" + index;
-          }
-
-          input.value = optionIndex;
-
-          label.appendChild(input);
-          label.appendChild(document.createTextNode(" " + option));
-
-          question.appendChild(label);
-        });
-      }
-
-      quizContent.appendChild(question);
-    });
-
-    const checkButton = document.createElement("button");
-    checkButton.textContent = "Check answers";
-    checkButton.className = "quiz-check";
-    checkButton.onclick = () => checkQuiz(st.quiz);
-
-    quizContent.appendChild(checkButton);
-    quizBox.style.display = "block";
-
-  } else {
-    quizBox.innerHTML = "";
-    quizBox.style.display = "none";
-  }
-
-  const visited = routeOrder.includes(id);
-  const btn = document.getElementById("mark-visited-btn");
-
-  btn.textContent = visited
-    ? "Mark as not visited"
-    : "Mark as discovered";
-
-  btn.onclick = () => {
-    if(routeOrder.includes(id)){
-      routeOrder = routeOrder.filter(x => x !== id);
-    } else {
-      routeOrder.push(id);
-    }
-
-    saveRoute();
-    renderAll();
-    openPanel(id);
-  };
-
-  document.getElementById("overlay").classList.add("open");
-}
-
+  if(st.audio){ audio.src = st.audio; audio.style.display = "block"; }
+  else { audio.style.display = "none"; }
 
   const elizaBox = document.getElementById("panel-eliza");
   const line = Array.isArray(st.eliza) ? st.eliza[Math.floor(Math.random()*st.eliza.length)] : st.eliza;
