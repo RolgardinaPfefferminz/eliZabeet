@@ -35,7 +35,7 @@ const STATIONS = [
     prompt:"Platzhalter-Aufgabe: Rieche am Kompost. Was zersetzt sich gerade?",
     eliza:["Ich verarbeite auch nur, was man mir gibt. Anders als der Kompost werde ich davon nicht besser."] },
 
-  { id:"milfabeet", name:"Milpabeet", icon:"🌽", pos:{x:9.1, y:16.7},
+  { id:"milpabeet", name:"Milpabeet", icon:"🌽", pos:{x:9.1, y:16.7},
     prompt:"Platzhalter-Aufgabe zum Milpabeet.",
     eliza:["Ich weiß nicht, was ein Milpabeet ist. Das beunruhigt mich mehr, als es sollte."] },
 
