@@ -133,15 +133,15 @@ const STATIONS = [
   { id:"insektenhotels", name:"Insektenhotels", icon:"🐝", pos:{x:78.2, y:78.9},
     prompt:"Platzhalter-Aufgabe zu den Insektenhotels.",
     eliza:["Kleine Zimmer für kleine Gäste. Auch ich bin nur ein Zimmer aus Text, in dem du kurz verweilst."] },
-
-   {
+{
   id:"seedbomb",
   name:"Guerrilla Gardening / Seed Bombs",
   icon:"🌱",
   isFinal:true,
   pos:{x:63.0, y:72.9},
-prompt:"Ready to garden secretly?\n\nGreat. Let’s see what you discovered today.",
- 
+
+  prompt:"Ready to garden secretly?\n\nGreat. Let’s see what you discovered today.",
+
   eliza:[
     "Welcome to the community of Guerrilla Gardeners.",
     "Every flower starts with one seed."
@@ -149,7 +149,96 @@ prompt:"Ready to garden secretly?\n\nGreat. Let’s see what you discovered toda
 
   note:{
     label:"🌱 Guerrilla Gardening Quiz",
-    content:"Hier kommt dein Quiz – und danach kannst du deine eigene Seed Bomb bauen."
+    content:"Here comes your quiz — and afterwards you can make your own Seed Bomb."
+  },
+
+  quiz:{
+    title:"Guerrilla Gardening Quiz",
+
+    questions:[
+      {
+        question:"Where did the modern Guerrilla Gardening movement begin?",
+        options:[
+          "Berlin",
+          "London",
+          "New York City",
+          "San Francisco"
+        ],
+        answer:2
+      },
+
+      {
+        question:"Who is best known as one of the founders of modern Guerrilla Gardening?",
+        options:[
+          "Liz Christy",
+          "Jane Jacobs",
+          "Rachel Carson",
+          "Wangari Maathai"
+        ],
+        answer:0
+      },
+
+      {
+        question:"What was the name of Liz Christy’s group?",
+        options:[
+          "Green Revolution",
+          "Seed Sisters",
+          "Garden Rebels",
+          "Green Guerrillas"
+        ],
+        answer:3
+      },
+
+      {
+        question:"What is a Seed Bomb?",
+        options:[
+          "A biodegradable Flower Pot",
+          "A Packet of Wildflower Seeds",
+          "Seeds mixed with Clay and Compost or Soil",
+          "A fertilizer Pallet"
+        ],
+        answer:2
+      },
+
+      {
+        question:"Who helped make Seed Balls famous through his philosophy of Natural Farming?",
+        options:[
+          "Masanobu Fukuoka",
+          "Charles Darwin",
+          "David Attenborough",
+          "Greta Thunberg"
+        ],
+        answer:0
+      },
+
+      {
+        question:"Why do people create Seed Bombs?",
+        options:[
+          "Increase biodiversity",
+          "Bring plants to neglected places",
+          "Support pollinators",
+          "Damage public spaces"
+        ],
+        answers:[0,1,2],
+        type:"multi"
+      },
+
+      {
+        question:"Seed Bombs can help plants grow in places where traditional gardening isn't possible.",
+        options:[
+          "True",
+          "False"
+        ],
+        answer:0,
+        type:"truefalse"
+      },
+
+      {
+        question:"What’s one thing you learned today that surprised you?",
+        type:"text"
+      }
+    ]
   }
 }
+   
 ];
