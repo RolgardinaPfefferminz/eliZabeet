@@ -4,8 +4,8 @@ eliZa🫜 — your uncanny tour guide
 Was das hier ist
 -----------------
 Eine schlichte Webseite, kein App-Zwang, kein Server nötig. Sie läuft,
-indem man einfach index.html im Browser öffnet oder die ganze Sache
-irgendwo mit HTTPS hostet (z.B. GitHub Pages, wie ihr's schon macht).
+indem man index.html im Browser öffnet oder 
+irgendwo mit HTTPS hostet.
 
 Ordnerstruktur
 --------------
@@ -16,12 +16,12 @@ eliZabeet/
 │                            sich das VERHALTEN ändern soll, nicht der
 │                            Inhalt.
 ├── content/
-│   ├── stations.js       ← DEINE STATIONEN. Das bearbeitest du am
+│   ├── stations.js       ←  STATIONEN. Das bearbeitest du am
 │   │                        häufigsten: Texte, eliZa-Sätze, Reihenfolge.
 │   └── config.js         ← ein paar globale Schalter, z.B. der Pfad
-│                            zu deiner eigenen Kartengrafik
+│                            zur eigenen Kartengrafik
 ├── assets/
-│   ├── map/               ← hier landet deine handgezeichnete Karte
+│   ├── map/               ← hier landet deine Karte
 │   │                        (das ganze Bild, einmalig)
 │   ├── vine/               ← eigene Grafiken für die Ranke selbst
 │   │                        (z.B. eine gezeichnete Blüte fürs Ende)
@@ -49,7 +49,7 @@ Eine Audiodatei hinzufügen
 Genauso, nur mit "audio" statt "image":
        audio: "assets/audio/kraeuterbeet.mp3"
 
-Die eigene Kartengrafik einbauen, sobald sie fertig ist
+Die Kartengrafik einbauen:
 ---------------------------------------------------------
 1. Bild in assets/map/ hochladen, z.B. garten.png
 2. In content/config.js die Zeile ändern zu:
@@ -80,6 +80,6 @@ Kommentar dazu, wie leicht wir Maschinen Verständnis unterstellen.
 
 Veröffentlichen / Hosten
 --------------------------
-Wie bisher: alles in ein GitHub-Repo hochladen, unter Settings → Pages
+Wie bisher: als GitHub-Repo hochladen, unter Settings → Pages
 "Deploy from a branch" / "main" / "/ (root)" einstellen, fertig ist
 eine öffentliche URL zum Verlinken per QR-Code.
