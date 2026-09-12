@@ -27,10 +27,12 @@ const canvas = document.getElementById("map-canvas");
 const stage = document.getElementById("map-stage");
 
 stage.querySelectorAll(".station-pin").forEach(p => p.remove());
-  if(CONFIG.mapBackground){
-    canvas.classList.add("has-image");
-    canvas.style.backgroundImage = `url("${CONFIG.mapBackground}")`;
-  } else {
+   if(CONFIG.mapBackground){
+  canvas.classList.add("has-image");
+  stage.classList.add("has-image");
+  stage.style.backgroundImage = `url("${CONFIG.mapBackground}")`;
+}
+else {
     canvas.classList.remove("has-image");
     canvas.style.backgroundImage = "";
     if(!canvas.querySelector(".map-pending")){
