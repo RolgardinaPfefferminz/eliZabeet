@@ -204,7 +204,7 @@ document.getElementById("map-expand-btn").addEventListener("click", () => {
 
   STATIONS.forEach((st) => {
     const hit = document.createElement("button");
-    hit.className = "large-station-hit";
+    hit.className = "large-station-hit" + (st.isStart ? " large-start" : "");
     hit.type = "button";
     hit.style.left = st.pos.x + "%";
     hit.style.top = st.pos.y + "%";
