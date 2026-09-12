@@ -144,6 +144,19 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
 .map-legend .items span{ display:inline-flex; align-items:center; gap:6px; }
 .map-legend .swatch-line{ width:16px; height:1.6px; background:var(--berry); display:inline-block; }
 .map-legend .swatch-dot{ width:9px; height:9px; border-radius:50%; background:var(--leaf); display:inline-block; }
+.large-station-hit{
+  position:absolute;
+  transform:translate(-50%,-50%);
+  width:48px;
+  height:48px;
+  padding:0;
+  margin:0;
+  border:none;
+  background:transparent;
+  cursor:pointer;
+  z-index:10;
+}
+
 .map-expand-btn{
   position:absolute;
   right:12px;
