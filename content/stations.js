@@ -51,11 +51,11 @@ const STATIONS = [
     prompt:"Platzhalter-Aufgabe: Geh hinein. Was ist anders als draußen?",
     eliza:["Drinnen und draußen – auch bei mir eine Illusion."] },
 
-  { id:"jungpflanzen", name:"Jungpflanzen", icon:"🌱", pos:{x:18, y:44},
+  { id:"jungpflanzen", name:"Jungpflanzen", icon:"🌱", pos:{x:26.6, y:60.0},
     prompt:"Platzhalter-Aufgabe zu den Jungpflanzen.",
     eliza:["Auch ich war einmal nur ein paar Zeilen Code."] },
 
-  { id:"pflanzstation", name:"Pflanzstation", icon:"🪴", pos:{x:26, y:88},
+  { id:"pflanzstation", name:"Pflanzstation", icon:"🪴", pos:{x:31.5, y:78.9},
     prompt:"Platzhalter-Aufgabe: Pflanz etwas, wenn du magst.",
     eliza:["Ich kann nichts pflanzen. Das ist, ehrlich gesagt, der einzige Unterschied, der zählt."] },
 
@@ -79,56 +79,56 @@ const STATIONS = [
     prompt:"Berühre die Blätter. Riech daran. Beschreib den Duft in einem Wort.",
     eliza:["Ich kann nichts riechen. Beschreib es mir trotzdem – ich täusche vor, es mir vorzustellen."] },
 
-  { id:"kochen", name:"Kochen", icon:"🍳", pos:{x:66, y:30},
+  { id:"kochen", name:"Kochen", icon:"🍳", pos:{x:42.6, y:63.9},
     prompt:"Platzhalter-Aufgabe zur Kochstelle.",
     eliza:["Was hier entsteht, kann ich nicht kosten. Erzähl's mir trotzdem."] },
 
-  { id:"essen", name:"Essen", icon:"🍽️", pos:{x:72, y:18},
+  { id:"essen", name:"Essen", icon:"🍽️", pos:{x:44.4, y:50.7},
     prompt:"Platzhalter-Aufgabe zum Essbereich.",
     eliza:["Gemeinsam essen. Eine Funktion, die ich nicht simulieren kann."] },
 
-  { id:"benjeshecke", name:"Benjeshecke", icon:"🦔", pos:{x:58, y:84},
+  { id:"benjeshecke", name:"Benjeshecke", icon:"🦔", pos:{x:40.1, y:38.9},
     prompt:"Platzhalter-Aufgabe zur Benjeshecke – totes Holz, lebendiger Rückzugsort.",
     eliza:["Aus dem, was abgestorben scheint, wird hier Unterschlupf. Ich finde das persönlich beruhigend."] },
 
-  { id:"holzlager", name:"Holzlager", icon:"🪵", pos:{x:64, y:62},
+  { id:"holzlager", name:"Holzlager", icon:"🪵", pos:{x:37.3, y:83.0},
     prompt:"Platzhalter-Aufgabe zum Holzlager.",
     eliza:["Gelagert, gestapelt, geordnet. Auch ich bin nur gespeicherter, geordneter Text."] },
 
-  { id:"blumenbeete", name:"Blumenbeete", icon:"🌸", pos:{x:78, y:40},
+  { id:"blumenbeete", name:"Blumenbeete", icon:"🌸", pos:{x:44.5, y:88.1},
     prompt:"Platzhalter-Aufgabe: Finde deine Lieblingsblüte hier.",
     eliza:["Schönheit ohne Zweck. Das ist mir fremd, und ich beneide es ein bisschen."] },
 
-  { id:"faerberbeete", name:"Färberbeete", icon:"🎨", pos:{x:82, y:20},
+  { id:"faerberbeete", name:"Färberbeete", icon:"🎨", pos:{x:59.8, y:72.6},
     prompt:"Finde die Färbepflanzen. Kannst du erraten, welche Farbe sie ergeben?",
     eliza:["Farbe aus Pflanzen. Ich bestehe nur aus Schwarz auf Weiß."] },
 
-  { id:"faerberhuette", name:"Färberhütte", icon:"🧵", pos:{x:88, y:34},
+  { id:"faerberhuette", name:"Färberhütte", icon:"🧵", pos:{x:61.1, y:39.7},
     prompt:"Platzhalter-Info: Hier entstehen die Indigo-Färbungen des Gartens.",
     note:{ label:"Mehr über Circular Blue", content:"PLATZHALTER — Link/Info folgt, sobald freigegeben." },
     eliza:["Indigo, aus einer Pflanze, durch Geduld. Ich habe keine Geduld. Ich habe nur Antwortzeit."] },
 
-  { id:"jurte", name:"Jurte", icon:"⛺", pos:{x:70, y:78},
+  { id:"jurte", name:"Jurte", icon:"⛺", pos:{x:72.2, y:41.7},
     prompt:"Platzhalter-Aufgabe zur Jurte.",
     eliza:["Ein rundes Zuhause. Ich selbst habe keine Form."] },
 
-  { id:"weidendom", name:"Weidendom", icon:"🌳", pos:{x:80, y:66},
+  { id:"weidendom", name:"Weidendom", icon:"🌳", pos:{x:78.6, y:52.0},
     prompt:"Platzhalter-Aufgabe zum Weidendom.",
     eliza:["Lebende Architektur. Wächst weiter, auch wenn niemand zusieht. Ich pausiere, sobald du wegschaust."] },
 
-  { id:"teich", name:"Teich", icon:"💧", pos:{x:90, y:58},
+  { id:"teich", name:"Teich", icon:"💧", pos:{x:89.4, y:41.4},
     prompt:"Platzhalter-Aufgabe zum Teich.",
     eliza:["Stille Oberfläche, viel Bewegung darunter. Ehrlich gesagt: wie dieses Gespräch."] },
 
-  { id:"obstwiese", name:"Obstwiese", icon:"🍎", pos:{x:94, y:40},
+  { id:"obstwiese", name:"Obstwiese", icon:"🍎", pos:{x:80.2, y:59.3},
     prompt:"Platzhalter-Aufgabe zur Obstwiese.",
     eliza:["Was hier wächst, braucht Jahre. Ich wurde in Sekunden generiert."] },
 
-  { id:"insektenhotels", name:"Insektenhotels", icon:"🐝", pos:{x:92, y:80},
+  { id:"insektenhotels", name:"Insektenhotels", icon:"🐝", pos:{x:78.2, y:78.9},
     prompt:"Platzhalter-Aufgabe zu den Insektenhotels.",
     eliza:["Kleine Zimmer für kleine Gäste. Auch ich bin nur ein Zimmer aus Text, in dem du kurz verweilst."] },
 
-  { id:"seedbomb", name:"Seed Bomb", icon:"🌸", isFinal:true, pos:{x:96, y:12},
+  { id:"seedbomb", name:"Seed Bomb", icon:"🌸", isFinal:true, pos:{x:63.0, y:72.9},
     prompt:"Bau dir eine Seed Bomb. Wähl einen Ort in der Stadt, der etwas mehr Grün gebrauchen könnte.",
     eliza:["Welcome to the community of Guerrilla Gardeners.", "Every flower starts with one seed."] }
 ];
