@@ -74,9 +74,9 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
 .map-canvas{
   position:relative;
   width:100%;
-  aspect-ratio: 4 / 3;
-  border:1px solid var(--line);
-  border-radius:8px;
+  height: 100vh;
+  border:none;
+  border-radius:0;
   overflow:hidden;
   background-color:#E8E2CC;
   background-image:
