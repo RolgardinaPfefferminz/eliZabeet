@@ -203,3 +203,10 @@ document.getElementById("map-expand-btn").addEventListener("click", () => {
 document.getElementById("map-close-btn").addEventListener("click", () => {
   mapOverlay.classList.remove("is-open");
 });
+mapLarge.addEventListener("click", (e) => {
+  const rect = mapLarge.getBoundingClientRect();
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+  alert(`x: ${x.toFixed(1)}%, y: ${y.toFixed(1)}%`);
+});
