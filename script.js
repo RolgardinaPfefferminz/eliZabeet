@@ -199,9 +199,19 @@ function renderAll(){
   renderHero();
   renderRoutePanel();
 }
-
 saveRoute();
 renderAll();
 renderFieldNote();
-window.addEventListener("resize", () => drawRouteLine(document.getElementById("map-canvas")));
+
+const mapCanvas = document.getElementById("map-canvas");
+const start = START_STATION;
+
+if(start){
+  requestAnimationFrame(() => {
+    mapCanvas.scrollLeft =
+      (start.pos.x / 100) * mapCanvas.scrollWidth -
+      mapCanvas.clientWidth / 2;
+  });
+}
+
 
