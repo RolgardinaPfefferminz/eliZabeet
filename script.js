@@ -48,7 +48,7 @@ function renderMap(){
     pin.className = "station-pin" + (st.isStart ? " start" : "") + (visited ? " visited" : "") + (!visited && !st.isStart ? " pulsing" : "");
     pin.style.left = st.pos.x + "%";
     pin.style.top = st.pos.y + "%";
-    pin.textContent = st.isStart ? "📍" : String(i).padStart(2, "0");
+   
     pin.onclick = () => openPanel(st.id);
     canvas.appendChild(pin);
   });
