@@ -71,10 +71,13 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
 @media (max-width: 860px){
   .map-route-grid{ grid-template-columns: 1fr; }
 }
-
 .map-canvas{
-  position:relative; width:100%; aspect-ratio: 4 / 3;
-  border:1px solid var(--line); border-radius:8px; overflow:hidden;
+  position:relative;
+  width:100%;
+  aspect-ratio: 4 / 3;
+  border:1px solid var(--line);
+  border-radius:8px;
+  overflow:hidden;
   background-color:#E8E2CC;
   background-image:
     linear-gradient(var(--line) 1px, transparent 1px),
@@ -82,7 +85,12 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   background-size:28px 28px;
   background-position:center;
 }
-.map-canvas.has-image{ background-image:none; background-size:cover; background-position:center; }
+.map-canvas.has-image{
+  background-image:none;
+  background-size:auto 100%;
+  background-position:left center;
+  background-repeat:no-repeat;
+}
 .map-pending{
   position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
   gap:14px; padding:20px; text-align:center;
