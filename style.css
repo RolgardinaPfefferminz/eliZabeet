@@ -96,7 +96,8 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   left:0;
   top:0;
   height:100%;
-  width:auto;
+  width:calc((100vh - 80px) * 4096 / 1372);
+
   aspect-ratio:4096 / 1372;
 
   background-image:url("assets/map/garden-map.png");
