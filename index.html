@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>eliZa🫜 — your uncanny tourguide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="logo">eliZa🫜</div>
+  <div class="meta">Berlin · Elisabeet <span class="dot"></span> Field Guide</div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">An uncanny garden guide</div>
+  <h1>Follow<br><em>the living line.</em></h1>
+  <p class="sub">Move through the map one small discovery at a time. eliZa remembers where you have been.</p>
+  <div class="counter">
+    <span id="hero-count">00</span><span class="slash">/</span><span id="hero-total">00</span>
+    <span class="cap">Stations visited</span>
+  </div>
+</section>
+
+<section class="section">
+  <div class="num-label">01 · The Map</div>
+  <div class="section-head-row">
+    <h2>Start anywhere.</h2>
+    <button class="reset-btn" id="reset-btn">↺ Reset route</button>
+  </div>
+
+  <div class="map-route-grid">
+    <div>
+      <div class="map-canvas" id="map-canvas">
+        <svg class="map-svg" id="map-svg"><path class="route-line" id="route-line" d=""/></svg>
+        <!-- Pins werden per JavaScript eingefügt -->
+      </div>
+      <div class="map-legend">
+        <div class="items">
+          <span><span class="swatch-line"></span> Explored route</span>
+          <span><span class="swatch-dot"></span> Station</span>
+        </div>
+        <div id="map-status">Tap a pin to begin</div>
+      </div>
+    </div>
+
+    <div class="route-panel">
+      <span class="tag" id="route-tag">Not yet started</span>
+      <div class="num-label">02 · Your Route</div>
+      <h2>A thread<br><em>through the garden.</em></h2>
+      <p>Each visited station leaves a mark. There is no correct order; let the line get strange.</p>
+
+      <div id="route-body"><!-- Platzhalter oder Liste per JS --></div>
+
+      <hr class="route-divider">
+      <div class="route-note">
+        <h3>↝ The vine keeps score.</h3>
+        <p>Your route is stored on this device, for next time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="field-notes">
+  <div class="num-label" style="width:100%;">03 · eliZa / Field Notes</div>
+  <div class="quote" id="field-note-text"></div>
+  <div class="src">eliZa / Field Notes</div>
+</div>
+
+<footer class="site">
+  <div>eliZa🫜 / your uncanny tourguide</div>
+  <div>Local-first · no account needed</div>
+</footer>
+
+<!-- Stations-Panel, öffnet sich beim Antippen eines Punkts auf der Karte -->
+<div id="overlay">
+  <div id="panel">
+    <span id="panel-icon" class="icon-big"></span>
+    <h2 id="panel-title"></h2>
+    <p id="panel-prompt" class="prompt"></p>
+    <img id="panel-image" style="display:none;">
+    <audio id="panel-audio" controls style="display:none; width:100%; margin-bottom:14px;"></audio>
+    <div id="panel-eliza" class="eliza-box"></div>
+    <div id="panel-note" class="info-note"></div>
+    <button id="mark-visited-btn"></button>
+    <button id="close-panel-btn">Back to the map</button>
+  </div>
+</div>
+
+<script src="content/config.js"></script>
+<script src="content/stations.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
