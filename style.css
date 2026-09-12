@@ -128,8 +128,8 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   z-index:5;
 }
 .station-pin.start{
-  width:30px;
-  height:30px;
+  width:34px;
+  height:34px;
 
   background:var(--berry);
   border:2px solid var(--paper);
