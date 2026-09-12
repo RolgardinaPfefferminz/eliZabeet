@@ -105,7 +105,7 @@ const STATIONS = [
 
    { id:"faerberhuette", name:"Färberhütte", icon:"🧵", pos:{x:61.1, y:39.7},
   eliza:["藍染め"],
-  image:"assets/images/katazome-radieschen.jpg",
+    image:"assets/map/katazome-radieschen.jpg",
   note:{
     label:"Circular Blue",
     content:"Katazome Experiment",
