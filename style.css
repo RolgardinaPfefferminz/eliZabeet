@@ -91,7 +91,19 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   background-size:28px 28px;
   background-position:center;
 }
+.map-stage{
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:auto;
+  aspect-ratio:4096 / 1372;
 
+  background-image:url("assets/map/garden-map.png");
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  background-position:center;
+}
 .map-canvas.has-image{
   background-image:none;
   background-size:auto 100%;
