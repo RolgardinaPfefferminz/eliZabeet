@@ -27,7 +27,7 @@
    ============================================================= */
 
 const STATIONS = [
-  { id:"start", name:"you are here", icon:"👋", isStart:true, pos:{x:6, y:50},
+  { id:"start", name:"you are here", icon:"👋", isStart:true, pos:{x:32.3, y:37.7},
     prompt:"Hallo, ich bin eliZa. Ich zeige dir keinen Weg – ich zeige dir nur, wo du schon warst.",
     eliza:["Ich bin nicht echt. Aber der Garten ist es. Fang an."] },
 
