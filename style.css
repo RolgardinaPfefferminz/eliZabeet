@@ -158,7 +158,12 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   cursor:pointer;
   z-index:10;
 }
-
+.large-start{
+  background:var(--berry);
+  border:2px solid var(--paper);
+  border-radius:50%;
+  box-shadow:0 0 0 2px var(--berry);
+}
 .map-expand-btn{
   position:absolute;
   right:12px;
