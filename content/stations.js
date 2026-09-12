@@ -140,9 +140,8 @@ const STATIONS = [
   icon:"🌱",
   isFinal:true,
   pos:{x:63.0, y:72.9},
-
-  prompt:"Bist du bereit, heimlich zu gärtnern?\nReady to garden secretly?\n\nSuper. Dann schauen wir mal, was du heute entdeckt hast.\nLet’s see what you discovered today.",
-
+prompt:"Ready to garden secretly?\n\nGreat. Let’s see what you discovered today.",
+ 
   eliza:[
     "Welcome to the community of Guerrilla Gardeners.",
     "Every flower starts with one seed."
