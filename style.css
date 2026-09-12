@@ -83,7 +83,9 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   margin-left:calc(50% - 50vw);
   border:none;
   border-radius:0;
-  overflow:hidden;
+  
+  overflow-x:auto;
+  overflow-y:hidden;
   background-color:#E8E2CC;
   background-image:
     linear-gradient(var(--line) 1px, transparent 1px),
