@@ -112,35 +112,30 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
 
 .station-pin{
   position:absolute;
-  transform:translate(-50%,-50%) rotate(-35deg);
-  width:24px;
-  height:14px;
-  border-radius:100% 0 100% 0;
-  background:var(--leaf);
-  border:2px solid var(--leaf-dark);
+  transform:translate(-50%,-50%);
+  width:44px;
+  height:44px;
+  background:transparent;
+  border:none;
   cursor:pointer;
-  box-shadow:0 0 0 4px rgba(239,234,216,0.6);
   z-index:5;
 }
 
-.station-pin:hover{
-  transform:translate(-50%,-50%) rotate(-35deg) scale(1.25);
-}
-
 .station-pin.start{
-  background:var(--leaf);
-  border-color:var(--leaf-dark);
+  background:transparent;
+  border:none;
+  box-shadow:none;
 }
 
 .station-pin.visited{
-  background:var(--leaf);
-  border-color:var(--leaf-dark);
+  background:transparent;
+  border:none;
+  box-shadow:none;
 }
 
 .station-pin.pulsing{
   animation:pinPulse 2.6s ease-in-out infinite;
 }
-
 @keyframes pinPulse{
   0%,100%{
     box-shadow:0 0 0 4px rgba(239,234,216,0.6);
