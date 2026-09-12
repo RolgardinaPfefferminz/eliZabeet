@@ -159,7 +159,6 @@ function openPanel(id){
     `<strong>${st.note.label}</strong><br>${st.note.content}` +
     (st.note.link ? `<br><a href="${st.note.link}" target="_blank" rel="noopener">Circular Blue →</a>` : "");
   noteBox.style.display = "block";
-}
 
   } else {
     noteBox.style.display = "none";
