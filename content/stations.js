@@ -31,15 +31,15 @@ const STATIONS = [
     prompt:"Hallo, ich bin eliZa. Ich zeige dir keinen Weg – ich zeige dir nur, wo du schon warst.",
     eliza:["Ich bin nicht echt. Aber der Garten ist es. Fang an."] },
 
-  { id:"kompost", name:"Kompost", icon:"🪱", pos:{x:14, y:20},
+  { id:"kompost", name:"Kompost", icon:"🪱", pos:{x:25.4, y:76.5},
     prompt:"Platzhalter-Aufgabe: Rieche am Kompost. Was zersetzt sich gerade?",
     eliza:["Ich verarbeite auch nur, was man mir gibt. Anders als der Kompost werde ich davon nicht besser."] },
 
-  { id:"milfabeet", name:"Milfabeet", icon:"🌽", pos:{x:22, y:62},
+  { id:"milfabeet", name:"Milpabeet", icon:"🌽", pos:{x:9.1, y:16.7},
     prompt:"Platzhalter-Aufgabe zum Milpabeet.",
     eliza:["Ich weiß nicht, was ein Milpabeet ist. Das beunruhigt mich mehr, als es sollte."] },
 
-  { id:"beet", name:"GemüseBeet", icon:"🥕", pos:{x:30, y:12},
+  { id:"beet", name:"GemüseBeet", icon:"🥕", pos:{x:09.8, y:42.2},
     prompt:"Platzhalter-Aufgabe: Was wächst hier gerade?",
     eliza:["Ein Beet. Wie interessant. Erzähl mir mehr davon."] },
 
@@ -47,7 +47,7 @@ const STATIONS = [
     prompt:"Platzhalter-Aufgabe zu den Hochbeeten.",
     eliza:["Erhöht, geordnet, kontrolliert. Fast wie ich."] },
 
-  { id:"tunnel", name:"Tunnel", icon:"🎪", pos:{x:46, y:34},
+  { id:"tunnel", name:"Tunnel", icon:"🎪", pos:{x:8.4, y:73.9},
     prompt:"Platzhalter-Aufgabe: Geh hinein. Was ist anders als draußen?",
     eliza:["Drinnen und draußen – auch bei mir eine Illusion."] },
 
@@ -67,15 +67,15 @@ const STATIONS = [
     prompt:"Platzhalter-Hinweis zur BioToilette (praktische Info, keine Aufgabe).",
     eliza:["Manche Dinge sind einfach nur praktisch. Nicht alles muss ein Erlebnis sein."] },
 
-  { id:"schuppen", name:"Schuppen", icon:"🧰", pos:{x:34, y:56},
+  { id:"schuppen", name:"Schuppen", icon:"🧰", pos:{x:20.0, y:76.7},
     prompt:"Platzhalter-Aufgabe zum Schuppen.",
     eliza:["Hier liegt vermutlich, was den Garten wirklich zusammenhält. Werkzeug, meine ich."] },
 
-  { id:"sammelpunkt", name:"Sammelpunkt Mitmachtag", icon:"🤝", pos:{x:26.5, y:62.1},
+  { id:"sammelpunkt", name:"Sammelpunkt Mitmachtag", icon:"🤝", pos:{x:20.5, y:39.7},
     prompt:"Platzhalter-Info zum nächsten Mitmachtag.",
     eliza:["Menschen, die wirklich zusammenkommen. Das kann ich nicht ersetzen. Ich will es auch nicht."] },
 
-  { id:"kraeuterbeet", name:"Kräuterbeet", icon:"🌿", pos:{x:50, y:70},
+  { id:"kraeuterbeet", name:"Kräuterbeet", icon:"🌿", pos:{x:26.0, y:62.3},
     prompt:"Berühre die Blätter. Riech daran. Beschreib den Duft in einem Wort.",
     eliza:["Ich kann nichts riechen. Beschreib es mir trotzdem – ich täusche vor, es mir vorzustellen."] },
 
