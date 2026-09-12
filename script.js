@@ -62,7 +62,7 @@ pin.style.top = st.pos.y + "%";
     pin.style.top = st.pos.y + "%";
    
     pin.onclick = () => openPanel(st.id);
-    canvas.appendChild(pin);
+    stage.appendChild(pin);
   });
 
   drawRouteLine(canvas);
