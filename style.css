@@ -184,9 +184,9 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   margin-bottom:12px;
   padding:8px 14px;
   cursor:pointer;
+  position:relative;
+  z-index:2000;
 }
-position:relative;
-z-index:2000;
 .map-overlay-inner{
   flex:1;
   overflow:auto;
