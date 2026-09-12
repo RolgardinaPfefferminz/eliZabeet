@@ -94,7 +94,7 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   background-position:center;
 }
 .map-stage{
-  position:absolute;
+  position:relative;
   left:0;
   top:0;
   height:100%;
