@@ -103,10 +103,16 @@ const STATIONS = [
     prompt:"Finde die Färbepflanzen. Kannst du erraten, welche Farbe sie ergeben?",
     eliza:["Farbe aus Pflanzen. Ich bestehe nur aus Schwarz auf Weiß."] },
 
-  { id:"faerberhuette", name:"Färberhütte", icon:"🧵", pos:{x:61.1, y:39.7},
-    prompt:"Platzhalter-Info: Hier entstehen die Indigo-Färbungen des Gartens.",
-    note:{ label:"Mehr über Circular Blue", content:"PLATZHALTER — Link/Info folgt, sobald freigegeben." },
-    eliza:["Indigo, aus einer Pflanze, durch Geduld. Ich habe keine Geduld. Ich habe nur Antwortzeit."] },
+   { id:"faerberhuette", name:"Färberhütte", icon:"🧵", pos:{x:61.1, y:39.7},
+  eliza:["藍染め"],
+  image:"assets/images/katazome-radieschen.jpg",
+  note:{
+    label:"Circular Blue",
+    content:"Katazome Experiment",
+    link:"https://nerding.at/circular_blue/katazome-experiment/"
+  }
+},
+   
 
   { id:"jurte", name:"Jurte", icon:"⛺", pos:{x:72.2, y:41.7},
     prompt:"Platzhalter-Aufgabe zur Jurte.",
