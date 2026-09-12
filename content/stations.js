@@ -55,7 +55,7 @@ const STATIONS = [
     prompt:"Platzhalter-Aufgabe zu den Jungpflanzen.",
     eliza:["Auch ich war einmal nur ein paar Zeilen Code."] },
 
-  { id:"pflanzstation", name:"Pflanzsstation", icon:"🪴", pos:{x:26, y:88},
+  { id:"pflanzstation", name:"Pflanzstation", icon:"🪴", pos:{x:26, y:88},
     prompt:"Platzhalter-Aufgabe: Pflanz etwas, wenn du magst.",
     eliza:["Ich kann nichts pflanzen. Das ist, ehrlich gesagt, der einzige Unterschied, der zählt."] },
 
@@ -63,7 +63,7 @@ const STATIONS = [
     prompt:"Platzhalter-Aufgabe zum Bauwagen.",
     eliza:["Ein Zuhause auf Rädern. Ich habe gar kein Zuhause, nur einen Browser-Tab."] },
 
-  { id:"biotoilette", name:"BioToilette", icon:"🚽", pos:{x:60, y:52},
+  { id:"biotoilette", name:"EcoToilette", icon:"🚽", pos:{x:60, y:52},
     prompt:"Platzhalter-Hinweis zur BioToilette (praktische Info, keine Aufgabe).",
     eliza:["Manche Dinge sind einfach nur praktisch. Nicht alles muss ein Erlebnis sein."] },
 
