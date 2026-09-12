@@ -22,9 +22,11 @@ function stationById(id){ return STATIONS.find(s => s.id === id); }
 
 /* ---------- Karte ---------- */
 function renderMap(){
-  const canvas = document.getElementById("map-canvas");
-  canvas.querySelectorAll(".station-pin").forEach(p => p.remove());
+ 
+const canvas = document.getElementById("map-canvas");
+const stage = document.getElementById("map-stage");
 
+stage.querySelectorAll(".station-pin").forEach(p => p.remove());
   if(CONFIG.mapBackground){
     canvas.classList.add("has-image");
     canvas.style.backgroundImage = `url("${CONFIG.mapBackground}")`;
