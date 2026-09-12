@@ -175,7 +175,7 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
 .map-large{
   position:relative;
   flex:none;
-  width:min(1800px, 100%);
+  width:max(1800px, 100%);
   aspect-ratio:4096 / 1372;
   background-image:url("assets/map/garden-map.png");
   background-size:contain;
