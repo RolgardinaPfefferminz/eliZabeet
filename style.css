@@ -143,6 +143,45 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   padding:8px 12px;
   cursor:pointer;
 }
+.map-overlay{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:1000;
+  background:rgba(20,20,20,.94);
+  padding:24px;
+}
+
+.map-overlay.is-open{
+  display:flex;
+  flex-direction:column;
+}
+
+.map-close-btn{
+  align-self:flex-end;
+  margin-bottom:12px;
+  padding:8px 14px;
+  cursor:pointer;
+}
+
+.map-overlay-inner{
+  flex:1;
+  overflow:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.map-large{
+  position:relative;
+  flex:none;
+  width:min(1800px, 100%);
+  aspect-ratio:4096 / 1372;
+  background-image:url("assets/map/garden-map.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+}
 /* ---------- route panel ---------- */
 .route-panel .tag{
   float:right; font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.05em;
