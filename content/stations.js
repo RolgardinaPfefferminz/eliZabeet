@@ -71,7 +71,7 @@ const STATIONS = [
     prompt:"Platzhalter-Aufgabe zum Schuppen.",
     eliza:["Hier liegt vermutlich, was den Garten wirklich zusammenhält. Werkzeug, meine ich."] },
 
-  { id:"sammelpunkt", name:"Sammelpunkt Mitmachtag", icon:"🤝", pos:{x:42, y:8},
+  { id:"sammelpunkt", name:"Sammelpunkt Mitmachtag", icon:"🤝", pos:{x:26.5, y:62.1},
     prompt:"Platzhalter-Info zum nächsten Mitmachtag.",
     eliza:["Menschen, die wirklich zusammenkommen. Das kann ich nicht ersetzen. Ich will es auch nicht."] },
 
