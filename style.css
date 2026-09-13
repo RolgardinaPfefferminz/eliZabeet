@@ -308,3 +308,16 @@ footer.site{
 }
 #mark-visited-btn{ background:var(--leaf); color:var(--paper); }
 #close-panel-btn{ background:transparent; color:var(--ink-soft); margin-top:8px; }
+
+.blink-dot{
+  animation: eliZaBlink 1.4s infinite;
+}
+
+@keyframes eliZaBlink{
+  0%, 45%{
+    opacity:1;
+  }
+  50%, 100%{
+    opacity:0;
+  }
+}
