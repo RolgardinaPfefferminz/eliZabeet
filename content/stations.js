@@ -140,7 +140,8 @@ const STATIONS = [
   isFinal:true,
   pos:{x:63.0, y:72.9},
 
-  prompt:"Ready to garden secretly?\n\nGreat. Let’s see what you discovered today.",
+  prompt:"Ready to garden secretly?\n\nHooray — you win a Seed Bomb!",
+
 
   eliza:[
     "Welcome to the community of Guerrilla Gardeners.",
