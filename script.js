@@ -273,7 +273,15 @@ function addQuizStyles(){
 /* ---------- Quiz anzeigen ---------- */
 
 function renderQuiz(st){
-   console.log("QUIZ STATION:", st);
+  if(!st.quiz){
+    const quizBox = document.getElementById("panel-quiz");
+    if(quizBox){
+      quizBox.style.display = "none";
+    }
+    return;
+  }
+
+  console.log("QUIZ STATION:", st);
   addQuizStyles();
 
   let quizBox = document.getElementById("panel-quiz");
