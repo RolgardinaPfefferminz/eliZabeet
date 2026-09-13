@@ -291,6 +291,7 @@ function renderQuiz(st){
 
   quizBox.innerHTML = "";
 
+ quizBox.innerHTML = "<p>QUIZ TEST</p>";  
   if(!st.quiz || !Array.isArray(st.quiz.questions)){
     quizBox.style.display = "none";
     return;
