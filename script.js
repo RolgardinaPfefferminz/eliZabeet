@@ -273,6 +273,7 @@ function addQuizStyles(){
 /* ---------- Quiz anzeigen ---------- */
 
 function renderQuiz(st){
+   console.log("QUIZ STATION:", st);
   addQuizStyles();
 
   let quizBox = document.getElementById("panel-quiz");
