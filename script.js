@@ -31,7 +31,6 @@ function renderMap(){
 
   if(CONFIG.mapBackground){
     canvas.classList.add("has-image");
-    stage.classList.add("has-image");
     stage.style.backgroundImage = `url("${CONFIG.mapBackground}")`;
   } else {
     canvas.classList.remove("has-image");
