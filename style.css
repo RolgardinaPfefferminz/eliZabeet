@@ -33,8 +33,9 @@ header.site .meta .dot{ width:7px; height:7px; border-radius:50%; background:var
   font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.1em;
   color:var(--berry); text-transform:uppercase; display:flex; align-items:center; gap:10px; margin-bottom:20px;
 }
+.hero .eyebrow::before{ content:''; width:26px; height:1px; background:var(--berry); }
 .hero h1{
-  font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:clamp(40px, 8vw, 78px);
+  font-family:'Fraunces', serif; font-weight:600; font-size:clamp(40px, 8vw, 78px);
   line-height:1.02; margin:0;
 }
 .hero h1 em{ font-style:italic; font-weight:500; color:var(--leaf); }
@@ -320,3 +321,7 @@ footer.site{
     opacity:0;
   }
 }
+
+
+
+
