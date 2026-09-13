@@ -297,11 +297,9 @@ function renderQuiz(st){
       noteBox.nextSibling
     );
   }
-
   quizBox.innerHTML = "";
 
- quizBox.innerHTML = "<p>QUIZ TEST</p>";  
-   if(false){
+  if(!st.quiz){
     quizBox.style.display = "none";
     return;
   }
